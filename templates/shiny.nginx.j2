@@ -4,7 +4,8 @@
 # {{ ansible_managed }}
 
 server {
-  listen {{ vars['ansible_' ~ tinc_prefix ~ tinc_name]['ipv4']['address'] }}:80;
+  listen 443 ssl http2;
+  listen [::]:443 ssl http2;
 
   server_name {{ shiny_host }};
 
