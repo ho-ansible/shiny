@@ -6,7 +6,7 @@
 run_as {{ shiny_user }};
 
 server {
-  listen 127.0.0.1:{{ shiny_localport }};
+  listen {{ shiny_localport }} 127.0.0.1;
 
   location / {
     site_dir /home/{{ shiny_user }};
