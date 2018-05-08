@@ -10,6 +10,6 @@ server {
 
   location / {
     site_dir /home/{{ shiny_user }};
-    log_dir /var/log/shiny;
+    log_dir {{ shiny_app_logdir }};
   }
 }

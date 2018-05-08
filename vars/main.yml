@@ -1,0 +1,5 @@
+---
+# hardcoded in /etc/systemd/system/shiny-server.service
+shiny_server_log: /var/log/shiny-server.log
+# default
+shiny_app_logdir: /var/log/shiny-server

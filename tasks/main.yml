@@ -34,7 +34,7 @@
     - logrotate
   copy:
     dest: /etc/logrotate.d/shiny-server
-    content: "/var/log/shiny-server.log {}"
+    content: "{{ shiny_server_log }} {}"
 
 - name: shiny | service
   tags:
