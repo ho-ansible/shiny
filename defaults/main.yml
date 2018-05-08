@@ -7,4 +7,4 @@ shiny_localport: 3838
 shiny_listen:
   - "localhost:80"
 
-shiny_url: "https://download3.rstudio.org/ubuntu-12.04/amd64/shiny-server-{{ shiny_ver }}-amd64.deb"
+shiny_url: "https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-{{ shiny_ver }}-amd64.deb"
