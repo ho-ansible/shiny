@@ -29,6 +29,13 @@
     tasks_from: site.yml
   with_items: shiny
 
+- name: shiny | logrotate config
+  tags:
+    - logrotate
+  copy:
+    dest: /etc/logrotate.d/shiny-server
+    content: "/var/log/shiny-server.log {}"
+
 - name: shiny | service
   tags:
     - service
