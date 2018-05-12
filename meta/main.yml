@@ -1,5 +1,5 @@
 ---
 dependencies:
-  - { role: R, tags: [R] }
-  - { role: nginx, tags: [nginx] }
+  - role: R
+  - role: nginx
 
