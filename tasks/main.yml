@@ -17,17 +17,15 @@
   tags:
     - config
   template:
-    src: "{{ item }}.j2"
-    dest: "/etc/shiny-server/{{ item }}"
-  with_items:
-    - shiny-server.conf
+    src: shiny-server.conf.j2
+    dest: "/etc/shiny-server/shiny-server.conf"
   notify: restart shiny
 
 - name: shiny | nginx config
   include_role:
     name: nginx
     tasks_from: site.yml
-  with_items: shiny
+  loop: [ shiny ]
 
 - name: shiny | logrotate config
   tags:
