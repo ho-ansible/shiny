@@ -22,10 +22,11 @@
   notify: restart shiny
 
 - name: shiny | nginx config
+  vars:
+    site: shiny
   include_role:
     name: nginx
     tasks_from: site.yml
-  loop: [ shiny ]
 
 - name: shiny | logrotate config
   tags:
