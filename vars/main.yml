@@ -1,4 +1,8 @@
 ---
+
+shiny_ver: 1.5.7.907
+shiny_url: "https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-{{ shiny_ver }}-amd64.deb"
+
 # hardcoded in /etc/systemd/system/shiny-server.service
 shiny_server_log: /var/log/shiny-server.log
 # default

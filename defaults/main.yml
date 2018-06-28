@@ -1,10 +1,7 @@
 ---
-shiny_ver: 1.5.7.907
 shiny_user: shiny
 shiny_passwd: ''
 shiny_host: shiny
 shiny_localport: 3838
 shiny_listen:
   - "localhost:80"
-
-shiny_url: "https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-{{ shiny_ver }}-amd64.deb"
