@@ -1,0 +1,11 @@
+#! /usr/bin/env ansible-playbook
+# Configure shiny R web app
+# Replace 'shiny' with your own inventory group
+---
+- name: shiny | R web app
+  hosts: shiny
+  roles:
+  - role: shiny
+    tags:
+    - shiny
+    - R

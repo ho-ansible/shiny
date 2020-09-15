@@ -1,5 +1,24 @@
 ---
+galaxy_info:
+  author: Sean Ho
+  description: web app in R
+  company: Anchorlytics Consulting
+  license: MIT
+
+  min_ansible_version: 1.2
+
+  platforms:
+  - name: Debian
+    versions:
+    - 10
+
+  galaxy_tags:
+  - R
+  - statistics
+  - math
+  - shiny
+
 dependencies:
-  - role: R
-  - role: nginx
+- role: R
+- role: nginx
 

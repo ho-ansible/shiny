@@ -6,7 +6,7 @@ Installation of this app has been moved to kubernetes,
 so this ansible role is no longer maintained.
 
 ## Requirements
-Only tested on Debian stable, for now.
+Only tested on Debian buster.
 
 ## Role Variables
 + `shiny_user` (default: shiny): unprivileged local user to run process under
@@ -16,17 +16,12 @@ Only tested on Debian stable, for now.
 + `shiny_listen` (default: [ localhost:80 ]): list of
   lines for 'listen' directive in nginx config
 
+## Playbooks
++ `main.yml`: apply role
+
 ## Dependencies
-+ R
-+ nginx
-
-## Example Playbook
-
-```
-- hosts: shiny
-  roles:
-    - { role: ho-ansible.shiny }
-```
++ [ho-ansible.nginx](https://github.com/ho-ansible/nginx)
++ [ho-ansible.R](https://github.com/ho-ansible/R)
 
 ## License
 MIT
